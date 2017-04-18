@@ -2,11 +2,142 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Sedona</title>
   </head>
+
   <body>
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиница</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <img src="#" alt="City of Sedona">
+        </div>
+      </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      <main>
+        <div class="main-image">
+          <img src="#" alt="Welcome to the gorgeous Sedona">
+        </div>
+        <div class="row">
+          <h1>Седона - небольшой городок в Аризоне,<br> заслуживающий большего</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+        <div class="row">
+          <div class="one-column">
+            <h2>Настоящий<br> городок</h2>
+            <p>-№1-</p>
+            <p>Седона не аттракцион<br>для туристов, там течет<br>своя жизнь</p>
+          </div>
+          <div class="two-columns">
+            <img src="#" width="" height="" alt="Real town">
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-column">
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить<br>в настоящем мотеле,<br>все как в кино!</p>
+          </div>
+          <div class="one-column">
+            <h2>Еда</h2>
+            <p>Всегда заказывайте<br>фирменный бургер,<br>вы не разочаруетесь!</p>
+          </div>
+          <div class="one-column">
+            <h2>Сувениры</h2>
+            <p>Не только китайского,<br>но и местного<br>производства!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two-columns">
+            <img src="#" width="" height="" alt="Devil's bridge">
+          </div>
+          <div class="one-column">
+            <h2>Там есть<br> мост дьявола!</h2>
+            <p>-№2-</p>
+            <p>Да, по нему можно<br>пройти! Если конечно<br>вы осмелитесь</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-column">
+            <h2>Небольшая<br>площадь</h2>
+            <p>-№3-</p>
+            <p>Все достопримечательности<br>находятся очень близко</p>
+          </div>
+          <div class="one-column">
+            <h2>Красивая<br>дорога</h2>
+            <p>-№4-</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+          </div>
+          <div class="one-column">
+            <h2>Мало<br>туристов</h2>
+            <p>-№5-</p>
+            <p>Большинство едет в Гранд-каньон и<br>толпится там</p>
+          </div>
+        </div>
+        <div class="row">
+          <p>Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="booking-container">
+          <a href="#" class="booking-form-manager">Поиск гостиницы в Седоне</a>
+          <form class="booking-form">
+            <label for="arrival-date-input">
+            Дата заезда:
+            </label>
+            <input type="date" name="arrival_date" value="24 апреля 2017" id="arrival-date-input">
 
+            <label for="departure-date-input">
+            Дата выезда:
+            </label>
+            <input type="date" name="departure_date" value="4 июля 2017" id="departure-date-input">
+
+            <label for="adults-quantity-input">
+            Взрослые:
+            </label>
+            <input type="number" name="adults-quantity" value="2" id="adults-quantity-input">
+
+            <label for="children-quantity-input">
+            Дети:
+            </label>
+            <input type="number" name="children-quantity" value="0" id="children-quantity-input">
+
+            <button type="submit">Найти</button>
+          </form>
+        </div>
+        <div class="map-container">
+          <img class="map" src="#" alt="map">
+        </div>
+      </main>
+
+      <footer>
+        <div class="row">
+          <div class="one-column">
+            <strong>#visitsedona</strong>
+          </div>
+          <div class="one-column">
+            <a class="social-btn social-btn-twitter" href="#">
+              <img src="#" alt="twitter">
+            </a>
+            <a class="social-btn social-btn-facebook" href="#">
+              <img src="#" alt="facebook">
+            </a>
+            <a class="social-btn social-btn-youtube" href="#">
+              <img src="#" alt="youtube">
+            </a>
+          </div>
+          <div class="one-column">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="#" alt="HTMLAcademy">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
