@@ -25,7 +25,7 @@
       <main>
         <div class="main-image">
         </div>
-        <div class="row">
+        <div class="row-white">
           <h1>Седона - небольшой городок в Аризоне,<br> заслуживающий большего</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
@@ -80,7 +80,7 @@
             <p>Большинство едет в Гранд-каньон и<br>толпится там</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row-white">
           <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем лучшие предложения гостиниц в Седоне</p>
         </div>
@@ -88,12 +88,12 @@
           <a href="#" class="booking-form-manager">Поиск гостиницы в Седоне</a>
           <form class="booking-form">
             <div class="form-field">
-              <label for="arrival-date">
+              <label for="arrival-date-input">
               Дата заезда:
               </label>
               <div class="arrival-date-input">
                 <input type="date" name="arrival_date" value="24 апреля 2017" id="arrival-date-input">
-                <img src="img/index/calendar.png" alt="Календарь">
+                <span class="icon-calendar">Календарь</span>
               </div>
             </div>
 
@@ -103,34 +103,26 @@
               </label>
               <div class="departure-date-input">
                 <input type="date" name="departure_date" value="4 июля 2017" id="departure-date-input">
-                <img src="img/index/calendar.png" alt="Календарь">
+                <span class="icon-calendar">Календарь</span>
               </div>
             </div>
 
-            <div class="human-quantity">
+            <div class="form-human-quantity">
               <label for="adults-quantity-input">
               Взрослые:
               </label>
-              <button type="button">
-                <img src="img/index/minus.png" alt="-">
-              </button>
+              <button type="button">-</button>
               <input type="number" name="adults-quantity" value="2" id="adults-quantity-input">
-              <button type="button">
-                <img src="img/index/plus.png" alt="+">
-              </button>
+              <button type="button">+</button>
             </div>
 
-            <div class="human-quantity">
+            <div class="form-human-quantity">
               <label for="children-quantity-input">
               Дети:
               </label>
-              <button type="button">
-                <img src="img/index/minus.png" alt="-">
-              </button>
+              <button type="button">-</button>
               <input type="number" name="children-quantity" value="0" id="children-quantity-input">
-              <button type="button">
-                <img src="img/index/plus.png" alt="+">
-              </button>
+              <button type="button">+</button>
             </div>
 
             <button type="submit">Найти</button>
