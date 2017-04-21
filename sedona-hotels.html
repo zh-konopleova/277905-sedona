@@ -14,7 +14,7 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li class="active"><a href="#">Гостиница</a></li>
+            <li class="active"><a>Гостиница</a></li>
           </ul>
         </nav>
         <div class="logo">
@@ -25,7 +25,7 @@
       <main>
         <div class="filters-container">
           <form class="filters" method="get" action="#">
-            <div class="infrastructure">
+            <div class="filter-infrastructure">
               <h3>Инфраструктура:</h3>
               <label for="swimming-pool-input">Бассейн</label>
               <input type="checkbox" name="swimming-pool" id="swimming-pool-input" checked>
@@ -34,7 +34,7 @@
               <label for="wifi-input">Wi-Fi</label>
               <input type="checkbox" name="wifi" id="wifi-input">
             </div>
-            <div class="hotel-type">
+            <div class="filter-hotel-type">
               <h3>Тип жилья:</h3>
               <label for="hotel-input">Гостиница</label>
               <input type="checkbox" name="hotel" id="hotel-input" checked>
@@ -43,7 +43,7 @@
               <label for="apartments-input">Апартаменты</label>
               <input type="checkbox" name="apartments" id="apartments-input" checked>
             </div>
-            <div class="price">
+            <div class="filter-price">
               <h3>Стоимость в сутки (Р):</h3>
               <input type="number" name="min_price" placeholder="от 0">
               <input type="number" name="max_price" placeholder="до 3000">
@@ -71,8 +71,8 @@
               </ul>
             </div>
             <div class="order">
-              <a href="#" class="asc"></a>
-              <a href="#" class="desc"></a>
+              <a href="#" class="order-asc"></a>
+              <a href="#" class="order-desc"></a>
             </div>
           </div>
           <div class="hotel-list">
@@ -88,7 +88,12 @@
                 <a href="#" class="booking">Забронировать</a>
               </div>
               <div class="hotel-rating">
-                <img src="img/catalog/four-stars.png" alt="4 звезды">
+                <div class="stars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
                 <span class="rating">Рейтинг:8,5</span>
               </div>
             </div>
@@ -104,7 +109,11 @@
                 <a href="#" class="booking">Забронировать</a>
               </div>
               <div class="hotel-rating">
-                <img src="img/catalog/three-stars.png" alt="3 звезды">
+                <div class="stars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
                 <span class="rating">Рейтинг:8,9</span>
               </div>
             </div>
@@ -120,7 +129,10 @@
                 <a href="#" class="booking">Забронировать</a>
               </div>
               <div class="hotel-rating">
-                <img src="img/catalog/two-stars.png" alt="2 звезды">
+                <div class="stars">
+                  <span></span>
+                  <span></span>
+                </div>
                 <span class="rating">Рейтинг:9,2</span>
               </div>
             </div>
