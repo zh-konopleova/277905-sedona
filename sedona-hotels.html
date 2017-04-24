@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body class="sedona-hotels">
     <div class="container">
       <header class="main-header">
         <nav class="main-nav">
           <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li class="active"><a>Гостиница</a></li>
+            <li class="nav-info"><a href="#">Информация</a></li>
+            <li class="nav-media"><a href="#">Фото и видео</a></li>
+            <li class="nav-map"><a href="#">Карта штата</a></li>
+            <li class="nav-hotels active"><a>Гостиница</a></li>
           </ul>
         </nav>
         <div class="logo">
@@ -23,25 +23,25 @@
       </header>
 
       <main>
-        <div class="filters-container">
+        <div class="filters-container clearfix">
           <form class="filters" method="get" action="#">
             <div class="filter-infrastructure">
               <h3>Инфраструктура:</h3>
-              <label for="swimming-pool-input">Бассейн</label>
               <input type="checkbox" name="swimming-pool" id="swimming-pool-input" checked>
-              <label for="parking-input">Парковка</label>
+              <label for="swimming-pool-input">Бассейн</label>
               <input type="checkbox" name="parking" id="parking-input">
-              <label for="wifi-input">Wi-Fi</label>
+              <label for="parking-input">Парковка</label>
               <input type="checkbox" name="wifi" id="wifi-input">
+              <label for="wifi-input">Wi-Fi</label>
             </div>
             <div class="filter-hotel-type">
               <h3>Тип жилья:</h3>
-              <label for="hotel-input">Гостиница</label>
               <input type="checkbox" name="hotel" id="hotel-input" checked>
-              <label for="motel-input">Мотель</label>
+              <label for="hotel-input">Гостиница</label>
               <input type="checkbox" name="motel" id="motel-input" checked>
-              <label for="apartments-input">Апартаменты</label>
+              <label for="motel-input">Мотель</label>
               <input type="checkbox" name="apartments" id="apartments-input" checked>
+              <label for="apartments-input">Апартаменты</label>
             </div>
             <div class="filter-price">
               <h3>Стоимость в сутки (Р):</h3>
@@ -54,9 +54,9 @@
           </form>
         </div>
         <div class="content-container">
-          <div class="hotels-manager">
-            <h1>Найдено:3</h1>
-            <div class="sorter">
+          <div class="hotels-manager clearfix">
+            <h1 class="left-column">Найдено:3</h1>
+            <div class="sorter central-column">
               <h4>Сортировка:</h4>
               <ul>
                 <li class="active">
@@ -70,24 +70,24 @@
                 </li>
               </ul>
             </div>
-            <div class="order">
+            <div class="order right-column">
               <a href="#" class="order-asc"></a>
               <a href="#" class="order-desc"></a>
             </div>
           </div>
           <div class="hotel-list">
-            <div class="hotel-item">
-              <div class="hotel-photo">
+            <div class="hotel-item clearfix">
+              <div class="hotel-photo left-column">
                 <img src="img/catalog/amara-resort.jpg" alt="Amara resort & SPA" width="135" height="90">
               </div>
-              <div class="hotel-info">
+              <div class="hotel-info central-column">
                 <h2>Amara resort & SPA</h2>
                 <span class="hotel-type">Гостиница</span>
                 <span class="hotel-price">от 4000 Р.</span>
                 <a href="#" class="more">Подробнее</a>
                 <a href="#" class="booking">Забронировать</a>
               </div>
-              <div class="hotel-rating">
+              <div class="hotel-rating right-column">
                 <div class="stars">
                   <span></span>
                   <span></span>
@@ -97,18 +97,18 @@
                 <span class="rating">Рейтинг:8,5</span>
               </div>
             </div>
-            <div class="hotel-item">
-              <div class="hotel-photo">
+            <div class="hotel-item clearfix">
+              <div class="hotel-photo left-column">
                 <img src="img/catalog/desert-quail.jpg" alt="Desert quaill inn" width="135" height="90">
               </div>
-              <div class="hotel-info">
+              <div class="hotel-info central-column">
                 <h2>Desert quaill inn</h2>
                 <span class="hotel-type">Мотель</span>
                 <span class="hotel-price">от 3000 Р.</span>
                 <a href="#" class="more">Подробнее</a>
                 <a href="#" class="booking">Забронировать</a>
               </div>
-              <div class="hotel-rating">
+              <div class="hotel-rating right-column">
                 <div class="stars">
                   <span></span>
                   <span></span>
@@ -117,18 +117,18 @@
                 <span class="rating">Рейтинг:8,9</span>
               </div>
             </div>
-            <div class="hotel-item">
-              <div class="hotel-photo">
+            <div class="hotel-item clearfix">
+              <div class="hotel-photo left-column">
                 <img src="img/catalog/villas-diablo.jpg" alt="Villas at poco diablo" width="135" height="90">
               </div>
-              <div class="hotel-info">
+              <div class="hotel-info central-column">
                 <h2>Villas at poco diablo</h2>
                 <span class="hotel-type">Апартаменты</span>
                 <span class="hotel-price">от 2000 Р.</span>
                 <a href="#" class="more">Подробнее</a>
                 <a href="#" class="booking">Забронировать</a>
               </div>
-              <div class="hotel-rating">
+              <div class="hotel-rating right-column">
                 <div class="stars">
                   <span></span>
                   <span></span>

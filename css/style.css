@@ -1,9 +1,14 @@
 body {
+  margin:0;
+  padding:0;
+
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans", Arial,sans-serif;
+  text-transform: uppercase;
+  /*background: url(../img/index/page.png) 50% 0 no-repeat;*/
 }
 
 h1 {
@@ -14,4 +19,127 @@ h1 {
 h2 {
   font-size: 21px;
   line-height: 21px;
+}
+
+.main-header {
+  position: relative;
+  min-height: 56px;
+  padding: 0 72px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo{
+  position: absolute;
+  top:0;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  font-size:0;
+  list-style:none;
+}
+
+.main-nav li {
+  display: inline-block;
+  width: 240px;
+  font-size:14px;
+  line-height: 56px;
+  vertical-align: middle;
+}
+
+.nav-info, .nav-media {
+  text-align: left;
+}
+
+.nav-media {
+  margin-right: 96px;
+}
+
+.nav-map, .nav-hotels {
+  text-align: right;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.main-image {
+  background-image: url(../img/index/main-background.jpg);
+  background-repeat: no-repeat;
+  height: 510px;
+}
+
+.slogan {
+  text-align: center;
+}
+
+.row::after,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.one-column,
+.two-columns {
+  float: left;
+}
+
+.one-column {
+  width: 400px;
+  text-align:center;
+}
+
+.two-columns {
+  width: 800px;
+}
+
+/* sedona-hotels.html */
+
+.sedona-hotels main {
+  padding: 0 72px;
+}
+
+.filter-infrastructure,
+.filter-hotel-type {
+  width: 240px;
+  float: left;
+}
+
+.filter-price {
+  width: 330px;
+  float: right;
+}
+
+.left-column {
+  width: 135px;
+  float: left;
+}
+
+.central-column {
+  width: 565px;
+  float: left;
+}
+
+.right-column {
+  width: 240px;
+  float: right;
+}
+
+.sorter h4,
+.sorter ul,
+.sorter li {
+  display: inline-block;
+}
+
+.sorter ul {
+  margin: 0;
+  padding: 0;
 }
