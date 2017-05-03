@@ -9,7 +9,7 @@ body {
   font-weight: bold;
   font-family: "PT Sans", "Arial",sans-serif;
   text-transform: uppercase;
- background: url(../img/index/page.png) 50% 0 no-repeat;
+  /*background: url(../img/index/page.png) 50% 0 no-repeat;*/
 }
 
 .container {
