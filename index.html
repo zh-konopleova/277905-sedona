@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -26,31 +28,31 @@
         <div class="main-image">
         </div>
         <div class="row row-white slogan">
-          <h1>Седона - небольшой городок в Аризоне,<br> заслуживающий большего</h1>
+          <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="row row-blue">
           <div class="one-column advantage-text">
             <h2>Настоящий<br> городок</h2>
-            <p>-№1-</p>
-            <p>Седона не аттракцион<br>для туристов, там течет<br>своя жизнь</p>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
           </div>
           <div class="two-columns advantage-photo">
             <img src="img/index/town's-photo.jpg" width="800" height="256" alt="Real town">
           </div>
         </div>
-        <div class="row row-gray">
+        <div class="row row-white">
           <div class="one-column service service-house">
             <h2>Жилье</h2>
-            <p>Рекомендуем пожить<br>в настоящем мотеле,<br>все как в кино!</p>
+            <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
           </div>
           <div class="one-column service service-food">
             <h2>Еда</h2>
-            <p>Всегда заказывайте<br>фирменный бургер,<br>вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
           </div>
           <div class="one-column service service-souvenirs">
             <h2>Сувениры</h2>
-            <p>Не только китайского,<br>но и местного<br>производства!</p>
+            <p>Не только китайского, но и местного<br>производства!</p>
           </div>
         </div>
         <div class="row row-blue">
@@ -58,104 +60,106 @@
             <img src="img/index/devil's-bridge-photo.jpg" width="800" height="256" alt="Devil's bridge">
           </div>
           <div class="one-column advantage-text">
-            <h2>Там есть<br> мост дьявола!</h2>
-            <p>-№2-</p>
-            <p>Да, по нему можно<br>пройти! Если конечно<br>вы осмелитесь</p>
+            <h2>Там есть<br> мост дьявола</h2>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
           </div>
         </div>
         <div class="row row-gray">
           <div class="one-column advantage-text">
             <h2>Небольшая<br>площадь</h2>
-            <p>-№3-</p>
+            <p>— №3 —</p>
             <p>Все достопримечательности<br>находятся очень близко</p>
           </div>
           <div class="one-column advantage-text">
             <h2>Красивая<br>дорога</h2>
-            <p>-№4-</p>
+            <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
           </div>
           <div class="one-column advantage-text">
             <h2>Мало<br>туристов</h2>
-            <p>-№5-</p>
+            <p>— №5 —</p>
             <p>Большинство едет в Гранд-каньон и<br>толпится там</p>
           </div>
         </div>
-        <div class="row row-white ">
-          <p>Заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки,<br>и мы покажем лучшие предложения гостиниц в Седоне</p>
-        </div>
         <div class="booking-container">
-          <a href="#" class="booking-form-manager">Поиск гостиницы в Седоне</a>
-          <form class="booking-form">
-            <div class="form-field">
-              <label for="arrival-date-input">
-              Дата заезда:
-              </label>
-              <div class="arrival-date-input">
-                <input type="date" name="arrival_date" value="24 апреля 2017" id="arrival-date-input">
-                <span class="icon-calendar">Календарь</span>
+          <p class="lead">Заинтересовались?</p>
+          <p class="booking-explanation">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="booking-form-container">
+            <a href="#" class="booking-form-manager">Поиск гостиницы в Седоне</a>
+            <form class="booking-form">
+              <div class="form-field clearfix">
+                <label for="arrival-date-input">
+                Дата заезда:
+                </label>
+                <div class="arrival-date-input clearfix">
+                  <input type="text" name="arrival_date" value="24 апреля 2017" id="arrival-date-input">
+                  <span class="icon-calendar">Календарь</span>
+                </div>
               </div>
-            </div>
 
-            <div class="form-field">
-              <label for="departure-date">
-              Дата выезда:
-              </label>
-              <div class="departure-date-input">
-                <input type="date" name="departure_date" value="4 июля 2017" id="departure-date-input">
-                <span class="icon-calendar">Календарь</span>
+              <div class="form-field clearfix">
+                <label for="departure-date">
+                Дата выезда:
+                </label>
+                <div class="departure-date-input">
+                  <input type="text" name="departure_date" value="4 июля 2017" id="departure-date-input">
+                  <span class="icon-calendar">Календарь</span>
+                </div>
               </div>
-            </div>
 
-            <div class="form-human-quantity">
-              <label for="adults-quantity-input">
-              Взрослые:
-              </label>
-              <button type="button">-</button>
-              <input type="number" name="adults-quantity" value="2" id="adults-quantity-input">
-              <button type="button">+</button>
-            </div>
+              <div class="form-human-quantity clearfix">
+                <label for="adults-quantity-input">
+                Взрослые:
+                </label>
+                <div class="form-number-input clearfix">
+                  <button type="button">-</button>
+                  <input type="text" name="adults-quantity" value="2" id="adults-quantity-input">
+                  <button type="button">+</button>
+                </div>
+              </div>
 
-            <div class="form-human-quantity">
-              <label for="children-quantity-input">
-              Дети:
-              </label>
-              <button type="button">-</button>
-              <input type="number" name="children-quantity" value="0" id="children-quantity-input">
-              <button type="button">+</button>
-            </div>
+              <div class="form-human-quantity children-quantity clearfix">
+                <label for="children-quantity-input">
+                Дети:
+                </label>
+                <div class="form-number-input clearfix">
+                  <button type="button">-</button>
+                  <input type="text" name="children-quantity" value="0" id="children-quantity-input">
+                  <button type="button">+</button>
+                </div>
+              </div>
 
-            <button type="submit">Найти</button>
-          </form>
+              <button type="submit" class="form-submit clearfix">Найти</button>
+            </form>
+          </div>
         </div>
         <div class="map-container">
           <img class="map" src="img/index/map.jpg" alt="map">
         </div>
       </main>
 
-      <footer>
-        <div class="row row-footer">
+      <footer class="main-footer row">
           <div class="one-column">
-            <strong>#visitsedona</strong>
+            <strong class="social-hashtag">#visitsedona</strong>
           </div>
           <div class="one-column">
             <a class="social-btn social-btn-twitter" href="#">
-              <img src="img/twitter.png" alt="twitter">
+              twitter
             </a>
             <a class="social-btn social-btn-facebook" href="#">
-              <img src="img/facebook.png" alt="facebook">
+              facebook
             </a>
             <a class="social-btn social-btn-youtube" href="#">
-              <img src="img/youtube.png" alt="youtube">
+              youtube
             </a>
           </div>
-          <div class="one-column">
+          <div class="one-column copyright">
             <p>Website by</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">
               <img src="img/htmlacademy.png" alt="HTMLAcademy">
             </a>
           </div>
-        </div>
       </footer>
     </div>
   </body>

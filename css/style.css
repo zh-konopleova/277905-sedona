@@ -1,14 +1,63 @@
 body {
   margin:0;
   padding:0;
+  min-width: 1200px;
 
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   font-weight: bold;
-  font-family: "PT Sans", Arial,sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   text-transform: uppercase;
-  /*background: url(../img/index/page.png) 50% 0 no-repeat;*/
+ background: url(../img/index/page.png) 50% 0 no-repeat;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*index*/
+.row::after,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.row-blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.row-gray {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.row-footer {
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.one-column,
+.two-columns {
+  float: left;
+}
+
+.one-column {
+  width: 400px;
+  text-align:center;
+}
+
+.two-columns {
+  width: 800px;
 }
 
 h1 {
@@ -21,15 +70,28 @@ h2 {
   line-height: 21px;
 }
 
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ a:hover {
+  color: #81b3d2;
+}
+
+ a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.active a{
+  color: #766357;
+}
+
 .main-header {
   position: relative;
   min-height: 56px;
   padding: 0 72px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .logo{
@@ -66,40 +128,371 @@ h2 {
   text-align: right;
 }
 
-.main-nav a {
-  text-decoration: none;
-}
-
 .main-image {
   background-image: url(../img/index/main-background.jpg);
   background-repeat: no-repeat;
   height: 510px;
+  margin-bottom: 58px;
 }
 
 .slogan {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.row::after,
-.clearfix::after {
+.slogan h1 {
+  margin-bottom: 28px;
+}
+
+.slogan p {
+  line-height: 26px;
+  margin: 0;
+}
+
+.advantage-text {
+  min-height: 255px;
+}
+
+.advantage-text h2 {
+  margin-top: 48px;
+  margin-bottom: 25px;
+}
+
+.advantage-text p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.advantage-photo img {
+  display: block;
+}
+
+.service h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.service-house h2::before {
   content: "";
-  display: table;
-  clear: both;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/index/house.png");
+  background-repeat: no-repeat;
+  margin-left: -37px;
 }
 
-.one-column,
-.two-columns {
+.service-food h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 74px;
+  height: 70px;
+  background-image: url("../img/index/burger.png");
+  background-repeat: no-repeat;
+  margin-left: -37px;
+}
+
+.service-souvenirs h2 {
+  margin-top: 57px;
+  padding-top: 103px;
+}
+
+.service-souvenirs h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 64px;
+  height: 76px;
+  background-image: url("../img/index/gift.png");
+  background-repeat: no-repeat;
+  margin-left: -32px;
+}
+
+.service p {
+  margin: 0;
+  margin-bottom: 81px;
+}
+
+.booking-container {
+  text-align: center;
+}
+
+.booking-container p.lead {
+  margin-top: 60px;
+  margin-bottom: 32px;
+  font-size: 30px;
+}
+
+.booking-container p.booking-explanation {
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+
+.booking-form-container {
+    position: relative;
+    width: 568px;
+    margin: auto;
+}
+
+.booking-form-manager {
+  display: block;
+  height: 86px;
+  background-color: #766357;
+  color: #ffffff;
+  text-align: center;
+  font-size: 21px;
+  vertical-align: middle;
+  line-height: 86px;
+}
+
+.booking-form-manager:hover {
+  background-color: #766357;
+  color: #ffffff;
+}
+
+.booking-form-manager:active {
+  background-color: #766357;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.booking-form {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 55px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.booking-form input,
+.form-number-input button {
+  box-sizing: border-box;
+  height: 38px;
+}
+
+.booking-form label {
+  width: 112px;
+  float: left;
+  line-height: 38px;
+  vertical-align: middle;
+}
+
+.booking-form .form-field {
+  margin-bottom: 30px;
+}
+
+.departure-date-input,
+.arrival-date-input {
+  position: relative;
+  width: 345px;
   float: left;
 }
 
-.one-column {
-  width: 400px;
-  text-align:center;
+.departure-date-input input,
+.arrival-date-input input {
+  width: 345px;
+  padding: 5px;
+  border: none;
+  font: inherit;
+  text-transform: inherit;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
-.two-columns {
-  width: 800px;
+.icon-calendar {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/index/calendar.png");
+  background-repeat: no-repeat;
+  text-indent: -10000px;
+  z-index: 10;
+  cursor: pointer;
 }
+
+.icon-calendar:hover {
+  background-image: url("../img/index/calendar-hover.png");
+}
+
+.icon-calendar:active {
+  background-image: url("../img/index/calendar-active.png");
+}
+
+.booking-form input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.form-number-input input{
+  width: 55px;
+  padding: 5px;
+  float: left;
+  border: none;
+  font: inherit;
+  text-transform: inherit;
+  text-align: center;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+ .children-quantity label{
+  width: 65px;
+  margin-left: 51px;
+}
+
+.form-number-input button {
+  width: 30px;
+  padding: 5px;
+  float: left;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
+  color: #a9a9a9;
+  line-height: inherit;
+  text-transform: inherit;
+  vertical-align: middle;
+  outline: none;
+}
+
+.form-number-input button:hover {
+  color: #000000;
+}
+
+.form-number-input button:active {
+  color: #81b3d2;
+}
+
+.form-number-input {
+  float: left;
+}
+
+.form-human-quantity {
+  margin-bottom: 53px;
+  float: left;
+}
+
+.booking-form .form-submit {
+  display: block;
+  width: 100%;
+  height: 58px;
+  font: inherit;
+  font-size: 21px;
+  text-transform: inherit;
+  line-height: 58px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  outline: none;
+}
+
+.booking-form .form-submit:hover {
+  background-color: #669ec0;
+}
+
+.booking-form .form-submit:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.main-footer {
+  position: absolute;
+  bottom:0;
+  min-height: 84px;
+  background-color: rgba(255, 255, 255, 0.9);
+  line-height: 48px;
+  vertical-align: middle;
+}
+
+.social-hashtag {
+  font-size: 21px;
+  text-align: center;
+}
+
+.main-footer .one-column {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -10000px;
+}
+
+.social-btn:hover {
+  background-color: #669ec0;
+}
+
+.social-btn-twitter {
+  background-image: url("../img/twitter.png");
+}
+
+.social-btn-twitter:active {
+  background-image: url("../img/twitter-active.png");
+  background-color: #5496bd;
+  opacity: 1;
+}
+
+.social-btn-facebook {
+  background-image: url("../img/facebook.png");
+
+}
+
+.social-btn-facebook:active {
+  background-image: url("../img/facebook-active.png");
+  background-color: #5496bd;
+  opacity: 1;
+}
+
+.social-btn-youtube {
+  background-image: url("../img/youtube.png");
+}
+
+.social-btn-youtube:active {
+  background-image: url("../img/youtube-active.png");
+  background-color: #5496bd;
+  opacity: 1;
+}
+
+.copyright p {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+
+}
+
+.copyright a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright img {
+  display: block;
+}
+
 
 /* sedona-hotels.html */
 
