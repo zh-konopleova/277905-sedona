@@ -2,7 +2,6 @@ body {
   margin:0;
   padding:0;
   min-width: 1200px;
-
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -10,8 +9,6 @@ body {
   font-family: "PT Sans", "Arial",sans-serif;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  /*background: url(../img/index/page.png) 50% 0 no-repeat;*/
-  /*background: url(../img/catalog/page.png) 50% 0 no-repeat;*/
 }
 
 .container {
@@ -20,6 +17,11 @@ body {
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Убирает крестик с input при фокусе в IE*/
+input::-ms-clear {
+   display: none;
 }
 
 /*index*/
@@ -137,9 +139,9 @@ a {
 }
 
 .main-image {
-  background-image: url(../img/index/main-background.jpg);
-  background-repeat: no-repeat;
-  height: 510px;
+  background: url(../img/index/mask-background.png) 0 100% no-repeat,
+              url(../img/index/main-background.jpg) 0 0 no-repeat;
+  min-height: 510px;
   margin-bottom: 58px;
 }
 
@@ -654,6 +656,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   font: inherit;
   background: none;
   border: none;
+  line-height: 1;
 }
 
 .range-price {
@@ -663,7 +666,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .range-price .scale {
   height: 2px;
-  background: rgba (255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .range-price .bar {
