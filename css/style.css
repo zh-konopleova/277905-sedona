@@ -139,8 +139,8 @@ a {
 }
 
 .main-image {
-  background: url(../img/index/mask-background.png) 0 100% no-repeat,
-              url(../img/index/main-background.jpg) 0 0 no-repeat;
+  background: url("../img/index/mask-background.png") 0 100% no-repeat,
+              url("../img/index/main-background.jpg") 0 0 no-repeat;
   min-height: 510px;
   margin-bottom: 58px;
 }
@@ -523,7 +523,6 @@ a {
 
 .sedona-hotels main {
   background-repeat: no-repeat;
-  width: 1200px;
 }
 
 .filters-container {
@@ -771,7 +770,6 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .central-column {
-  width: 565px;
   float: left;
 }
 
