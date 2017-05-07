@@ -20,11 +20,12 @@ body {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
 }
 
-.visible {
-  display: block;
+.animated-hidden {
+  transition-property: opacity;
+  transition-duration: 2s;
 }
 
 /* Убирает крестик с input при фокусе в IE*/
