@@ -19,6 +19,14 @@ body {
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 /* Убирает крестик с input при фокусе в IE*/
 input::-ms-clear {
    display: none;

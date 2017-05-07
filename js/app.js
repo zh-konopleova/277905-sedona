@@ -4,3 +4,16 @@ function initMap() {
     zoom: 10
   });
 }
+
+
+var bookingForm = document.querySelector('.booking-form');
+bookingForm.classList.add('hidden');
+document.querySelector('.booking-form-manager').addEventListener('click', function (e) {
+  event.preventDefault();
+
+  if (bookingForm.classList.contains('hidden')) {
+    bookingForm.classList.remove('hidden');
+  } else {
+    bookingForm.classList.add('hidden');
+  }
+});
