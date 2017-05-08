@@ -9,7 +9,7 @@ function initMap() {
 var bookingForm = document.querySelector('.booking-form');
 bookingForm.classList.add('hidden');
 document.querySelector('.booking-form-manager').addEventListener('click', function (e) {
-  event.preventDefault();
+  e.preventDefault();
 
   if (bookingForm.classList.contains('hidden')) {
     bookingForm.classList.remove('hidden');
