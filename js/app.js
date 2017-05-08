@@ -8,7 +8,9 @@ function initMap() {
 
 var bookingForm = document.querySelector('.booking-form');
 bookingForm.classList.add('hidden');
-document.querySelector('.booking-form-manager').addEventListener('click', function (e) {
+
+var bookingFormManager = document.querySelector('.booking-form-manager');
+var toggleBookingForm = function (e) {
   e.preventDefault();
 
   if (bookingForm.classList.contains('hidden')) {
@@ -16,4 +18,10 @@ document.querySelector('.booking-form-manager').addEventListener('click', functi
   } else {
     bookingForm.classList.add('hidden');
   }
-});
+};
+
+if (bookingFormManager.addEventListener) {
+  bookingFormManager.addEventListener('click', toggleBookingForm);
+} else if (bookingFormManager.attachEvent) {
+  bookingFormManager.attachEvent('onclick', toggleBookingForm);
+}
