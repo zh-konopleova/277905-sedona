@@ -384,7 +384,7 @@ a {
   background-color: #f2f2f2;
 }
 
- .children-quantity label{
+.children-quantity label{
   width: 65px;
   margin-left: 51px;
 }
@@ -615,7 +615,7 @@ a {
 }
 
 .filters-container input[type="checkbox"] {
-    display:none;
+  display:none;
 }
 
 .filters-container input[type="checkbox"] + label {
