@@ -992,7 +992,16 @@ input[type="checkbox"]:checked:disabled + label::before {
   margin-bottom: 40px;
 }
 
-.hotel-rating .stars span {
+.hotel-rating .stars-text {
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  text-indent: -10000px;
+  text-align: left;
+  line-height: 0;
+}
+
+.hotel-rating .star {
   display: inline-block;
   width: 17px;
   height: 17px;
@@ -1002,7 +1011,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   margin-right: 3px;
 }
 
-.hotel-rating .stars span:last-child {
+.hotel-rating .star:last-child {
   margin-right: 0;
 }
 
