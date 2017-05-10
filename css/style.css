@@ -922,8 +922,9 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .hotel-item h2 {
   margin: 0;
+  margin-top: -5px;
   margin-bottom: 5px;
-  letter-spacing: 0px;
+  line-height: 26px;
 }
 
 .hotel-info {
